@@ -1,0 +1,23 @@
+<div class="container">
+  <h2>LISTADO DE PERSONAS</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">Edad</th>
+          <th scope="col">Dirrecion</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let person of persons">
+          <td>{{person.name}}</td>
+          <td>{{person.lastname}}</td>
+          <td>{{person.age}}</td>
+          <td>{{person.address}}</td>
+          <td>{{person.email}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

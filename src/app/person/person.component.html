@@ -1,0 +1,35 @@
+<div class="mt-1">
+  <form>
+    <h2>REGISTRO DE USUARIO</h2>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Nombre</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingre su nombre">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Apellido</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su apellido">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Edad</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su edad">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Direcion</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su direccion">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su email">
+      </div>
+      
+     
+      <button type="submit" class="btn btn-primary">Registrar</button>
+    </form>
+</div>
+
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let item of equipo, index  as i">
+    <h6>Nombre: {{item.nombre}}</h6>
+    <a [routerLink]="['/equipo',i]">Leer mas...</a>
+  </li>
+</ul>
